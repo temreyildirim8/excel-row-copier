@@ -1,0 +1,82 @@
+$myColor: gray;
+$marginDefault: 10px;
+$marginDouble: 20px;
+$marginTriple: 30px;
+
+h2 {
+  color: $myColor;
+  margin: $marginDefault $marginTriple;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.rows-wrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.text-wrapper {
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 500px;
+}
+.text-input {
+  width: 300px;
+  margin: $marginDefault;
+}
+.row-number {
+  font-size: 24px;
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.button-wrapper {
+  margin: $marginDefault $marginDouble;
+  width: 500px;
+}
+.button {
+  margin: $marginDefault $marginTriple;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+.plus {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  padding: 3px 6px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.plus:hover {
+  cursor: pointer;
+}
+.brackets {
+  margin: $marginDefault;
+}
+
+@media only screen and (max-width: 480px) {
+  .text-wrapper {
+    width: 300px;
+  }
+  .text-input {
+    width: 200px;
+  }
+  .button-wrapper {
+    width: 200px;
+    margin-left: 32px;
+  }
+}
