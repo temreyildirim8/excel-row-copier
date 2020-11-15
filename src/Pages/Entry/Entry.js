@@ -47,6 +47,18 @@ const Entry = () => {
     setGoToNextStep(true);
   }
 
+  // const handleService = () => {
+  //   // send a POST request
+  //   axios({
+  //     method: 'post',
+  //     url: '/',
+  //     data: {
+ 
+  //     }
+  //   });
+  //   // then call modal via state
+  // }
+
   return (
     <section className="wrapper">
       <h2>Entry Page</h2>
@@ -70,7 +82,7 @@ const Entry = () => {
         </div>
           {/* <div className="table-wraper">
             {rows.map((row, index) => (
-              ROWS WILL BE ADDED HERE WITH SELECTED BRACKET
+              ROWS WILL BE ADDED HERE WITH SELECTED BRACKET, ROWS SHOULD BE CARRIED TO STATE
             ))}
           </div> */}
       </div>
